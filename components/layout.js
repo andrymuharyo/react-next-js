@@ -4,7 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utilities.module.css";
 import Link from "next/link";
 
-const name = "Andry Muharyo";
+const name = "Sample Posts";
 export const siteTitle = "Next.js";
 export const siteDescription = "With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!";
 
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
                     <>
                         <Link href="/">
                             <a>
-                                <Image priority src="/images/steak.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={name} />
+                                <Image priority src="/images/photo.jpg" className={utilStyles.borderCircle} height={120} width={120} alt={name} />
                             </a>
                         </Link>
                         <h1 className={`${utilStyles.heading2Xl} ${"text-indigo-500"}`}>
@@ -56,7 +56,7 @@ export default function Layout({ children, home }) {
                     <>
                         <Link href="/">
                             <a>
-                                <Image priority src="/images/steak.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={name} />
+                                <Image priority src="/images/photo.jpg" className={utilStyles.borderCircle} height={120} width={120} alt={name} />
                             </a>
                         </Link>
                         <h1 className={`${utilStyles.heading2Xl} ${"text-green-500"}`}>
@@ -71,7 +71,7 @@ export default function Layout({ children, home }) {
             {!home && (
                 <div className={styles.backToHome}>
                     <Link href="/">
-                        <a>← Back to home</a>
+                        <a className={"text-indigo-500 hover:text-indigo-600"}>← Back to home</a>
                     </Link>
                 </div>
             )}

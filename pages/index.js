@@ -22,13 +22,12 @@ export default function Home({ allPostsData }) {
                 <title>{siteTitle}</title>
             </Head>
             <section className={`${utilStyles.headingMd} ${"mt-4 mb-4"}`}>
-                <p className={"mb-3"}>Hello my name is Andry Muharyo ,I am Sr. Full Stack Web Developer</p>
                 <Link href="/404">
                     <a className={"bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-3 my-7 block rounded-md hover:no-underline"}>Test 404</a>
                 </Link>
                 <p className={"mt-3"}>
                     (This is a sample website - you’ll be building a site like this on{" "}
-                    <a class="text-indigo-500 hover:text-indigo-600" href="https://nextjs.org/learn">
+                    <a className={"text-indigo-500 hover:text-indigo-600"} href="https://nextjs.org/learn">
                         our Next.js tutorial
                     </a>
                     .)
